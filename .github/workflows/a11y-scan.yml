@@ -3,6 +3,8 @@ name: Accessibility Scanner
 on:
   workflow_dispatch:
 
+permissions: {}
+
 jobs:
   accessibility_scanner:
     runs-on: ubuntu-latest
