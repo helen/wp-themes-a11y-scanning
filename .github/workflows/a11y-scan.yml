@@ -11,7 +11,7 @@ jobs:
         with:
           urls: |
             https://wp-themes.com/twentytwentyfive/
-          repository: helen/wp-themes-a11y-scanning
+          repository: ${{ github.repository }}
           token: ${{ secrets.GH_TOKEN }}
           cache_key: cached_results-wp-themes.json
           skip_copilot_assignment: true
