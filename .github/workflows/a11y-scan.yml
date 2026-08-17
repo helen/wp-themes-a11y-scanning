@@ -3,8 +3,6 @@ name: Accessibility Scanner
 on:
   workflow_dispatch:
 
-permissions: {}
-
 jobs:
   accessibility_scanner:
     runs-on: ubuntu-latest
@@ -14,6 +12,6 @@ jobs:
           urls: |
             https://wp-themes.com/twentytwentyfive/
           repository: ${{ github.repository }}
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.SCANNER_TOKEN }}
           cache_key: cached_results-wp-themes.json
           skip_copilot_assignment: true
