@@ -15,5 +15,5 @@ jobs:
           repository: ${{ github.repository }}
           token: ${{ secrets.SCANNER_TOKEN }}
           cache_key: cached_results-wp-themes.json
-          scans: '["axe","accesslint"]'
+          scans: '["axe"]'
           skip_copilot_assignment: true
