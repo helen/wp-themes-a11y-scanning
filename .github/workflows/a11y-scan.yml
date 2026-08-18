@@ -11,7 +11,10 @@ jobs:
         with:
           urls: |
             https://wp-themes.com/twentytwentyfive/
-            https://wp-themes.com/astra
+            https://wp-themes.com/twentytwentyfive/?page_id=2
+            https://wp-themes.com/twentytwentyfour/
+            https://wp-themes.com/twentytwentythree/
+            https://wp-themes.com/astra/
           repository: ${{ github.repository }}
           token: ${{ secrets.SCANNER_TOKEN }}
           cache_key: cached_results-wp-themes.json
